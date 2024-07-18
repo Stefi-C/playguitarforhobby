@@ -233,8 +233,55 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     color: var(--oliveGreen);
     font-size: 18px;
 }
-
-
+/*tools*/
+.tools-banner{
+    height: 60vh;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(/img/tools-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whiteGreen);
+}
+.tools-banner h1{
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #222;
+}
+.content iframe{
+    margin: 20px;
+    border: 9px solid var(--clearGuitar);
+    box-shadow: 2px 2px 5px #222;
+    align-self: center;
+}
+.content .tutorial{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--whiteGreen);
+    text-shadow: 2px 2px 5px #222;
+}
+.content .tutorial h2{
+    color: var(--guitar);
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.content .tutorial ol{
+    background-color: var(--transp-green);
+    padding: 20px;
+    box-shadow: 2px 2px 5px #222;
+}
+.content .tutorial li{
+    padding: 5px;
+    margin: 5px;
+    font-size: 17px;
+}
 
 
 
