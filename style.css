@@ -53,7 +53,6 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
 .navbar ul{
     display: flex;
     width: 100%;
-    font-family: var(--title);
     text-transform: uppercase;
     justify-content: space-around;
 }
@@ -61,9 +60,12 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     width: 20%;
     text-align: center;
 }
+
 .navbar ul li a{
     font-size: 18px;
+    font-family: var(--title);
 }
+
 .navbar ul li a:hover{
     color: var(--clearGuitar);
 }
@@ -135,6 +137,7 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
   padding: 10px;
   margin: 0 50px;
   width: 70%;
+  font-family: var(--paragraph);
 }
 /*practice*/
 .container{
@@ -225,6 +228,7 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     color: var(--whiteGreen);
     font-size: 18px;
     text-align: justify;
+    font-family: var(--paragraph);
    
 }
 .step ul li{
@@ -232,6 +236,7 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     margin-left: 25px;
     color: var(--oliveGreen);
     font-size: 18px;
+    font-family: var(--paragraph);
 }
 /*tools*/
 .tools-banner{
@@ -281,11 +286,128 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     padding: 5px;
     margin: 5px;
     font-size: 17px;
+    font-family: var(--paragraph);
 }
-
-
-
-
+/*about*/
+.about-banner{
+    height: 60vh;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(/img/about-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--whiteGreen);
+}
+.about-banner h1{
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #222;
+}
+.about-intro{
+    display: flex;
+    color: var(--oliveGreen);
+    justify-content: center;
+    align-items: center;
+}
+.about-intro p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--paragraph);
+}
+.guitar-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guitar-info h3{
+    color: var(--guitar);
+    font-family: var(--title);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.structure{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.structure img{
+    width: 350px;
+    margin: 0 30px;
+}   
+.structure-desc{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px #222;
+    align-self: center;
+    line-height: 40px;
+}
+.structure-desc p{
+    font-size: 20px;
+    color: var(--whiteGreen);
+    font-family: var(--paragraph);
+}
+.type-of{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.type-of img{
+    width: 300px;
+    height: auto;
+}
+.guitar-desc{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px #222;
+    align-self: center;
+}
+.guitar-desc h4{
+    color: var(--clearGuitar);
+    font-size:20px;
+    text-align: center;
+    font-family: var(--title);
+    text-shadow: 2px 2px 3px #222;
+}
+.guitar-desc p{
+    color: var(--whiteGreen);
+    font-family: var(--paragraph);
+    font-size: 18px;
+    text-align: justify;
+}
+.history{
+    display: flex;
+}
+.history h4{
+    color: var(--guitar);
+    font-family: var(--title);
+}
+.history-part1{
+    padding: 10px;
+    font-family: var(--paragraph);
+    text-align: justify;
+    color: var(--whiteGreen);
+}
+.history-part2{
+    box-shadow: 2px 2px 5px #222;
+    padding: 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: var(--paragraph);
+    line-height: 25px;
+    text-align: justify;
+    color: var(--oliveGreen);
+}
 
 
 
@@ -307,12 +429,14 @@ footer{
 .last-p{
     width: 500px;
     color: var(--whiteGreen);
+    font-family: var(--paragraph);
 }
 .last-p p{
     text-shadow: 2px 2px 5px #222;
     padding: 20px;
     background: var(--transp-seaGreen);
     box-shadow: 2px 2px 5px #222;
+    font-size: var(--title);
 }
 .last-p h3{
     font-family: var(--title);
@@ -322,4 +446,5 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 10px 80px;
+    font-family: var(--paragraph);
 }
