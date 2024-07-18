@@ -27,13 +27,14 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
     overflow-x: hidden;
 }
-
 /*home*/
 #home{
     display: flex;
-    flex-direction:column ;
+    flex-direction:column;
 }
 .home-container{
     background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(/img/home-bg.jpg) no-repeat center;
@@ -138,7 +139,7 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     background: var(--seaGreen);
 }
 .content-div img{
-  width: 100%;
+  width: 50%;
   height: auto;
   margin: 10px;
   box-shadow: 2px 2px 10px #222;
@@ -199,11 +200,7 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
     box-shadow: 2px 2px 5px #222;
     font-size: 20px;
 }
-.fa-chevron-down{
-    font-size: 30px;
-    color: #222;
-    text-align: center;
-}
+
 .steps{
     display: flex;
     flex-direction: column;
@@ -219,15 +216,16 @@ p, h1,h2,h3,h4,h5,h6{cursor: default;}
 .content{
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: var(--seaGreen);
     box-shadow: 2px 2px 10px #222;
     margin: 10px;
 }
 .content img{
-    width: 250px !important;
+    width: 250px;
     margin: 10px;
     opacity: .5;
+    
 }
 .step-list{
     padding: 10px;
