@@ -609,5 +609,36 @@ footer{
     body{
         border: 5px solid purple;
     }
-
+    .tool-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .tool-content2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .history-part1{
+        display: flex;
+        align-items: center;
+    }
+    .history-part1 img{
+         width: 150px;
+    }
+    .structure{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .type-of img{
+        display: none;
+    }
+    .guitar-desc{
+        width: 100%;
+    }
+    .last-p p{
+        display: none;
+    }
 }
