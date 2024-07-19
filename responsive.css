@@ -1,0 +1,11 @@
+@media screen and(min-width: 768px) and ( max-width:1023px) {
+    body{
+        border: 5px solid red;
+    }
+}
+@media screen and(max-width: 767px){
+    body{
+        border: 5px solid purple;
+    }
+
+}

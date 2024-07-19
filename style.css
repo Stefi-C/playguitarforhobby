@@ -42,10 +42,39 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+.menu{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 10px 30px;
+    background-color: var(--oliveGreen);
+    z-index: 999;
+    top: -700px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    justify-content: space-between;
+    position: relative;
+}
+.menu ul li{
+    border-bottom: 1px solid var(--seaGreen);
+   
+}
+.menu ul li a{
+    font-size: 22px;
+}
 .navbar{
     display: flex;
     position: fixed;
+    top: 0;
     z-index: 999;
     width: 100%;
     height: auto;
@@ -549,17 +578,7 @@ footer{
         display: block;
     }
     .navbar{
-        top: -900px;
-        height: 50vh;
-        transition: top .3s ease;
-        background: var(--oliveGreen);
-    }
-    .navbar ul{
-        flex-direction: column;
-        
-    }
-    .navbar ul li{
-        width: 100%;
+        display: none;
     }
     .banner p{
         width: 600px;

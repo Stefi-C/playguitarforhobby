@@ -22,6 +22,16 @@
             <nav>
                 <div class="navbar"> 
                     <ul id="navbar">
+                        
+                        <li><a href="/tools.html">Tools</a></li>
+                        <li><a href="/practice.html">Practice</a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/experience.html">My Experience</a></li>
+                    </ul>
+                </div>
+                <div class="menu"> 
+                    <ul id="menu">
                         <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
                         <li><a href="/tools.html">Tools</a></li>
                         <li><a href="/practice.html">Practice</a></li>
@@ -29,7 +39,7 @@
                         <li><a href="/experience.html">My Experience</a></li>
                     </ul>
                 </div>
-                <button class="toggle_bnt" onclick="navbarFunction()"><i class="fa-solid fa-bars"></i></button>
+                <button class="toggle_bnt" onclick="menuFunction()"><i class="fa-solid fa-bars"></i></button>
                 
             </nav>
             <div class="banner">
@@ -103,7 +113,21 @@
     
     <script src="script.js"></script>
     <script>
+       let menuBtn = document.querySelector('.toggle_btn');
+       let menu = document.querySelector('.menu');
+    let icon = document.querySelector('.fa-bars');
 
+       function menuFunction(){
+        console.log('clicked')
+        if(menu.style.top === '0px'){
+            menu.style.top = '-900px';
+            icon.classList.replace("fa-times", "fa-bars");
+        }else{
+            menu.style.top = '0px';
+            icon.classList.replace("fa-bars", "fa-times");
+        }
+
+       }
     </script>
 </body>
 </html>

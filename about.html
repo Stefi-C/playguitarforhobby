@@ -19,9 +19,10 @@
     <body>
         <section id="home">
             <div class="container">
-                <nav>
-                <div class="navbar">
+               <nav>
+                <div class="navbar"> 
                     <ul id="navbar">
+                        
                         <li><a href="/tools.html">Tools</a></li>
                         <li><a href="/practice.html">Practice</a></li>
                         <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
@@ -29,7 +30,16 @@
                         <li><a href="/experience.html">My Experience</a></li>
                     </ul>
                 </div>
-                <div class="toggle_bnt"><i class="fa-solid fa-bars"></i></div>
+                <div class="menu"> 
+                    <ul id="menu">
+                        <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="/tools.html">Tools</a></li>
+                        <li><a href="/practice.html">Practice</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/experience.html">My Experience</a></li>
+                    </ul>
+                </div>
+                <button class="toggle_bnt" onclick="menuFunction()"><i class="fa-solid fa-bars"></i></button>
                 
             </nav>
                 <div class="about-banner">
@@ -85,7 +95,7 @@
                                       sound hole. 
                                     On the body, the bridge, the saddle, and the bridge pins hold the wires in place.</p>
                             </div>
-                            <img src="/assets/images/clipart2489663.png" alt="">
+                           
                         </div>  
                         
                         <h3>Classic VS Acustic</h3>
@@ -267,5 +277,22 @@
         </section>
         
         <script src="script.js"></script>
+        <script>
+            let menuBtn = document.querySelector('.toggle_btn');
+            let menu = document.querySelector('.menu');
+         let icon = document.querySelector('.fa-bars');
+     
+            function menuFunction(){
+             console.log('clicked')
+             if(menu.style.top === '0px'){
+                 menu.style.top = '-900px';
+                 icon.classList.replace("fa-times", "fa-bars");
+             }else{
+                 menu.style.top = '0px';
+                 icon.classList.replace("fa-bars", "fa-times");
+             }
+     
+            }
+         </script>
     </body>
 </html>
