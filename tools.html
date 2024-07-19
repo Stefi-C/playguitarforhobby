@@ -20,17 +20,18 @@
         <section id="home">
             <div class="container">
                 <nav>
-                    <div class="navbar">
-                        <ul>
-                            <li><a href="/tools.html">Tools</a></li>
-                            <li><a href="/practice.html">Practice</a></li>
-                            <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
-                            <li><a href="/about.html">About</a></li>
-                            <li><a href="/experience.html">My Experience</a></li>
-                        </ul>
-                    </div>
-                    
-                </nav>
+                <div class="navbar">
+                    <ul id="navbar">
+                        <li><a href="/tools.html">Tools</a></li>
+                        <li><a href="/practice.html">Practice</a></li>
+                        <li><a href="/index.html"><i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/experience.html">My Experience</a></li>
+                    </ul>
+                </div>
+                <div class="toggle_bnt"><i class="fa-solid fa-bars"></i></div>
+                
+            </nav>
                 <div class="tools-banner">
                     <h1>Tune it, Play it</h1>
                     
@@ -45,7 +46,7 @@
                             <li> 2. **Select Tuning Mode**: Ensure the tuner is set to "Guitar" and "Standard" tuning. The standard tuning is E-A-D-G-B-E from the lowest (thickest) string to the highest (thinnest) string.
                            </li>
                             <li> 3. **Tap to Start**: Click on the "Tap to Start" button in the center of the tuner. This will activate the microphone to start picking up the sound of your guitar.
-                           </li>
+                           </li><span class="dots">...</span><span class="more">
                             <li>  4. **Tune Each String**:
                                - **Low E String (6th string)**: Pluck the low E string (the thickest string). The tuner will display the current pitch and how close it is to the correct pitch (E). Adjust the tuning peg until the needle is centered on the 'E' and the Hz (Hertz) and cents indicators show the string is in tune.
                                - **A String (5th string)**: Next, pluck the A string. Tune it until the tuner indicates it's an 'A' and the needle is centered.
@@ -59,8 +60,9 @@
                             <li> 6. **Additional Features**: If available, explore additional features like Hz (Hertz) and cents indicators for more precise tuning. Some tuners also offer chromatic tuning or alternate tunings if needed.
                            </li>
                             <li> 7. **Complete**: Once all strings are in tune, your guitar is ready to play. Make sure to periodically check the tuning while playing, as strings can go out of tune with use.
-                           </li>
+                           </li></span>
                         </ol>
+                        <button onclick="myFunction()" class="myBtn">Read more</button>
                     </div>
                 </div>
                 <div class="content">
@@ -78,6 +80,7 @@
    - The diagram indicates the strings and frets to press down. The vertical lines represent the guitar strings (from left to right: E, A, D, G, B, e), and the horizontal lines represent the frets.
    - The numbers on the dots indicate which fingers to use (1 for index, 2 for middle, 3 for ring, 4 for pinky).
 </li>
+<span class="dots">...</span><span class="more">
                         <li>4. **Play the Chord**:
    - Position your fingers according to the chord diagram. In the "C Major" chord shown:
      - Place your ring finger (3) on the 3rd fret of the A string (5th string).
@@ -95,8 +98,9 @@
 </li>
                         <li>7. **Embed the Tool** (if applicable):
    - If you want to embed the chord tool on your website, use the provided iframe code. Copy the code and paste it into the HTML of your webpage where you want the chord tool to appear.
-</li>
+</li></span>
                         </ol>
+                        <button onclick="myFunction()" class="myBtn">Read more</button>
                     </div>
                     <iframe src="https://guitarapp.com/chords/embedtool?labels=fingers&colors=two&theme=light" title="Online Chord Tool" style="width: 360px; height:560px; border-radius: 4px;"></iframe>
 
@@ -153,5 +157,23 @@
         </section>
         
         <script src="script.js"></script>
+        <script>
+             //learn more button
+   function myFunction() {
+    var dots = document.getElementsByClassName("dots");
+    var moreText = document.getElementsByClassName("more");
+    var btnText = document.getElementsByClassName("myBtn");
+   
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+   }
+        </script>
     </body>
 </html>

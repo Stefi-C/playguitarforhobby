@@ -77,11 +77,15 @@ body{
     font-stretch: 20px;
     cursor: pointer;
     display: none;
-    position: absolute;
+    position: fixed;
     right: 5%;
     top: 5%;
     z-index: 999;
-    font-size: 30px;
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: var(--transp-green);
+    box-shadow: 2px 2px 7px #222;
+    border-radius: 3px;
 }
 .banner{
     padding: 150px;
@@ -368,10 +372,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.type-of img{
-    width: 300px;
-    height: auto;
-}
+
 .guitar-desc{
     margin: 20px;
     padding: 20px;
@@ -380,6 +381,10 @@ body{
     justify-content: center;
     box-shadow: 2px 2px 5px #222;
     align-self: center;
+    position: relative;
+    background: var(--transp-green);
+    z-index: 1;
+    
 }
 .guitar-desc h4{
     color: var(--clearGuitar);
@@ -393,6 +398,7 @@ body{
     font-family: var(--paragraph);
     font-size: 18px;
     text-align: justify;
+    z-index: 3;
 }
 .history{
     display: flex;
@@ -416,6 +422,17 @@ body{
     line-height: 25px;
     text-align: justify;
     color: var(--oliveGreen);
+}
+.typeof-img1{
+    right: 50px;
+    position: absolute;
+    z-index: 0;
+}
+
+.typeof-img2{
+    left: 50px;
+    position: absolute;
+    z-index: 0;
 }
 /*experience*/
 .experience-banner{
@@ -475,6 +492,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 10px 80px;
+    flex-wrap: nowrap;
 }
 .last-p{
     width: 500px;
@@ -492,27 +510,48 @@ footer{
     font-family: var(--title);
     text-transform: uppercase;
 }
+.end-text{
+    margin: 10px;
+}
 .copyright{
     display: flex;
     justify-content: space-between;
     padding: 10px 80px;
     font-family: var(--paragraph);
 }
+.dots{
+    display: none;
+}
+.myBtn{
+    display: none;
+    padding: 5px 10px;
+    font-family: var(--paragraph);
+    text-transform: capitalize;
+    background: var(--oliveGreen);
+    color: var(--whiteGreen);
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px #222;
+    cursor: pointer;
+    transition: .5 ease;
+}
 
 /*responsive*/
 
 @media screen and ( max-width:1024px) {
-    body{
-        border: 5px solid red;
+   
+    .dots{
+        display: block;
+    }
+    .myBtn{
+        display: block;
     }
     .toggle_bnt{
         display: block;
     }
     .navbar{
-        height: 100vh;
         top: -900px;
         height: 50vh;
-        transition: .5s ease-out;
+        transition: top .3s ease;
         background: var(--oliveGreen);
     }
     .navbar ul{
@@ -524,6 +563,27 @@ footer{
     }
     .banner p{
         width: 600px;
+    }
+    .more{
+        display: none;
+    }
+    .step-img{
+        display: none;
+    }
+    .content-3{
+        display: block;
+    }
+    .guitar-desc{
+        width: 80%;
+    }
+    .home-content h2{
+        font-size: 24px;
+    }
+    .content-div{
+        flex-direction: column;
+    }
+    .banner h1{
+        font-size: 40px;
     }
 }
 @media screen and ( max-width: 767px){

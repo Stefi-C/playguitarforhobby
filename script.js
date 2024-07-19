@@ -1,39 +1,29 @@
 
- //navbar
- /*
- function reorderNavbar() {
-    const navbar = document.getElementById('navbar');
-    const items = Array.from(navbar.children);
-    const homeItem = items.find(item => item.querySelector('a').getAttribute('href') === 'index.html');
-
-    if (window.innerWidth <= 1024) {
-      if (navbar.firstChild !== homeItem) {
-        navbar.insertBefore(homeItem, navbar.firstChild);
-      }
-    } else {
-      const thirdItem = items[2];
-      if (thirdItem !== homeItem) {
-        navbar.insertBefore(homeItem, thirdItem.nextSibling);
-      }
-    }
-  }
-
-  // Reorder on page load
-  window.addEventListener('load', reorderNavbar);
-  // Reorder on window resize
-  window.addEventListener('resize', reorderNavbar);*/
-
-  navbarBtn = document.querySelector('.toggle_bnt');
-navbar = document.querySelector('.navbar');
-
-if(navbarBtn){
-    navbarBtn.addEventListener('click', function(){
-        if(navbar.style.top == "-900px"){
-          navbar.style.top = "0"
-          navbarBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-      }else{
-          navbar.style.top = "-900px";
-          navbarBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
-       }
-      })
-}
+        //navbar
+        const navbarBtn = document.querySelector(".toggle_btn"),
+        navbar = document.querySelector('.navbar'),
+        icon = document.querySelector('.fa-bars');
+        if(window.innerWidth < 1024){
+            navbar.style.top = '-900px';
+             function navbarFunction(){
+                console.log("Toggle button clicked");
+                if (navbar.style.top === "0px" || navbar.style.top === "") {
+                    console.log("Hiding navbar");
+                    navbar.style.top = "-900px";
+                    
+                } else {
+                    console.log("Showing navbar");
+                    navbar.style.top = "0";
+                    
+                }
+                if(icon.classList.contains("fa-bars")){
+                    icon.classList.replace("fa-bars", "fa-times");
+                }
+                else{
+                    icon.classList.replace("fa-times", "fa-bars");
+                }
+            }
+        }
+           
+            
+        
