@@ -37,7 +37,7 @@ body{
     flex-direction:column;
 }
 .home-container{
-    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/home-bg.JPG) no-repeat center;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/home-bg.jpg) no-repeat center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -193,7 +193,7 @@ body{
 }
 .practice-banner{
     height: 60vh;
-    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/practice-bg.JPG) no-repeat;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/practice-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -283,7 +283,7 @@ body{
 /*tools*/
 .tools-banner{
     height: 60vh;
-    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/tools-bg.JPG) no-repeat;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/tools-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -333,7 +333,7 @@ body{
 /*about*/
 .about-banner{
     height: 60vh;
-    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/about-bg.JPG) no-repeat;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/about-bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -466,7 +466,7 @@ body{
 /*experience*/
 .experience-banner{
     height: 60vh;
-    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/experience-bg.JPG) no-repeat;
+    background: linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/experience-bg.jpg) no-repeat;
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -482,7 +482,7 @@ body{
     text-shadow: 2px 2px 5px #222;
 }
 .experience-content{
-    background: linear-gradient(145deg,#0c4325e1 0%, var(--transp-seaGreen)100%), url(./img/experience-content-bg.JPG) no-repeat;
+    background: linear-gradient(145deg,#0c4325e1 0%, var(--transp-seaGreen)100%), url(./img/experience-content-bg.jpg) no-repeat;
     background-position: top;
     background-size: cover;
     padding: 20px;
@@ -509,7 +509,7 @@ body{
 
 /*footer*/
 footer{
-    background:linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/home-content2.JPG);
+    background:linear-gradient(to bottom, var(--transp-oliveGreen) 0%, var(--transp-green) 60%, var(--transp-whiteGreen) 100% ), url(./img/home-content2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     padding: 30px 0;
