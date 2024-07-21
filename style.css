@@ -543,6 +543,11 @@ footer{
 .end-text{
     margin: 10px;
 }
+.end-text li{
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+}
 .copyright{
     display: flex;
     justify-content: space-between;
@@ -550,8 +555,8 @@ footer{
     padding: 10px 80px;
     font-family: var(--paragraph);
 }
-.copyright p:last-child a{
-    color: #222;
+.copyright  a{
+    color: var(--oliveGreen);
 }
 .dots{
     display: none;
