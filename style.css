@@ -395,6 +395,7 @@ body{
     font-size: 20px;
     color: var(--whiteGreen);
     font-family: var(--paragraph);
+    text-align: justify;
 }
 .type-of{
     display: flex;
@@ -545,6 +546,7 @@ footer{
 .copyright{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px 80px;
     font-family: var(--paragraph);
 }
@@ -607,6 +609,9 @@ footer{
     .banner h1{
         font-size: 40px;
     }
+    .about-intro{
+        flex-direction: column;
+    }
 }
 @media screen and ( max-width: 767px){
    
@@ -642,4 +647,59 @@ footer{
     .last-p p{
         display: none;
     }
+}
+@media screen and ( max-width: 600px){
+    .banner  h1, .banner h2, .banner p{
+        width: 400px;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .home-content p {
+        height: 300px;
+        overflow: scroll;
+    }
+    .home-content img{
+        width: 250px;
+    }
+    .last-p h3{
+        width: 150px;
+        margin-left: -35px;
+    }
+    .theory{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .steps-intro{
+        width: 450px;
+    }
+    .steps{
+        width: 430px;
+       
+    }
+    .steps .content{
+        height: 300px;
+        overflow: scroll;
+    }
+    .structure-desc p{
+        font-size: 18px;
+    }
+    .history-part1 img{
+        display: none;
+    }
+    .history-part1 {
+        width: 450px;
+        align-items: center;
+        margin-left: -30px;
+    }
+    .history-part2{
+        width: 400px;
+        height: 400px;
+        overflow: scroll;
+    }
+    .about-banner h1{
+        width: 400px;
+    }
+
 }
