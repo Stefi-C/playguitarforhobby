@@ -689,9 +689,10 @@ footer{
         display: none;
     }
     .history-part1 {
-        width: 450px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        margin-left: -30px;
     }
     .history-part2{
         width: 400px;
