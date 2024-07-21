@@ -548,6 +548,9 @@ footer{
     padding: 10px 80px;
     font-family: var(--paragraph);
 }
+.copyright p:last-child a{
+    color: #222;
+}
 .dots{
     display: none;
 }
@@ -606,9 +609,7 @@ footer{
     }
 }
 @media screen and ( max-width: 767px){
-    body{
-        border: 5px solid purple;
-    }
+   
     .tool-content{
         display: flex;
         flex-direction: column;
