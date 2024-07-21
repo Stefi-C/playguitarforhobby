@@ -101,7 +101,7 @@ body{
 .navbar ul li a:hover{
     color: var(--clearGuitar);
 }
-.toggle_bnt{
+.toolMenuBtn, .toggle_bnt{
     color: var(--whiteGreen);
     font-stretch: 20px;
     cursor: pointer;
@@ -577,7 +577,7 @@ footer{
     .myBtn{
         display: block;
     }
-    .toggle_bnt{
+    .toolMenuBtn,.toggle_bnt{
         display: block;
     }
     .navbar{
