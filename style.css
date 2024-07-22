@@ -690,15 +690,15 @@ footer{
     .structure-desc p{
         font-size: 18px;
     }
-    .history-part1 img{
-        display: none;
-    }
+    
     .history-part1 {
         width: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
+
     .history-part2{
         width: 400px;
         height: 400px;
