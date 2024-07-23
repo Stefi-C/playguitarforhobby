@@ -545,8 +545,7 @@ footer{
 }
 .end-text li{
     font-size: 16px;
-    margin: 5px;
-    padding: 5px;
+    margin: 4px;
 }
 .copyright{
     display: flex;
@@ -619,7 +618,9 @@ footer{
     }
 }
 @media screen and ( max-width: 767px){
-   
+   body{
+    width: 100%wv;
+   }
     .tool-content{
         display: flex;
         flex-direction: column;
@@ -668,8 +669,8 @@ footer{
         width: 250px;
     }
     .last-p h3{
-        width: 150px;
-        margin-left: -35px;
+        width: 100px;
+        margin-left: -55px;
     }
     .theory{display: flex;
         flex-direction: column;
