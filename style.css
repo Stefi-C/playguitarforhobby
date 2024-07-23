@@ -705,6 +705,9 @@ footer{
         height: 400px;
         overflow: scroll;
     }
+    footer{
+        background-size: cover;
+    }
     
 
 }
