@@ -163,6 +163,7 @@ body{
     font-family: var(--title);
     text-transform: capitalize;
     font-size: 45px;
+    margin: 20px;
 }
 .content-div{
     display: flex;
